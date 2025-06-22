@@ -5,6 +5,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import EventsList from './pages/EventsList';
+import LocationsList from './pages/LocationsList';
+import ContactsList from './pages/ContactsList';
+
 
 export default function App() {
   return (
@@ -15,6 +18,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/events" element={<EventsList />} />
+            <Route path="/locations" element={<LocationsList />} />
+<Route path="/contacts" element={<ContactsList />} />
+
             {/* Más rutas: /locations y /contacts */}
           </Routes>
         </main>
